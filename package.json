@@ -1,0 +1,19 @@
+{
+  "name": "file_upload",
+  "version": "1.0.0",
+  "description": "upload file with multer",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "multer"
+  ],
+  "author": "scott",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "multer": "^1.4.1"
+  }
+}
