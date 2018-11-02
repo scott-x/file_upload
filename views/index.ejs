@@ -7,11 +7,12 @@
 	<title>Node FIle Upload</title>
 </head>
 <body>
-	<h3>File Upload With Multer</h3>
-	<%= typeof msg != 'undefined'? msg : '' %>
+	<h3 style="color: #f60;">File Upload With Multer</h3>
+	<hr>
+	<p style="color:red;"><%= typeof msg != 'undefined'? msg : '' %></p>
 	<form action="/upload" method="post" enctype="multipart/form-data">
-		<input type="file" name="myImage" />
-		<input type="submit" value="confirm">
+		<span style="font-size: 12px;">选择图片</span>:<input type="file" name="myImage" /> <br>
+		<input type="submit" value="确认上传" style="background: green;color: #fff;cursor: pointer;">
 	</form>
 	<br>
 	<img src="<%= typeof file != 'undefined' ? file :'' %>" class='img-responsive' alt="">
