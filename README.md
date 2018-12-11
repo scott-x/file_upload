@@ -27,4 +27,4 @@ Any issue with this repo, please feel free to contact me, either of below ways w
 2. Just pull your question in this page.
 
 ## Lecence
-MIT-[Scott Xiong]()
+MIT-[Scott Xiong](https://github.com/scott-x)
