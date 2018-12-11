@@ -15,12 +15,9 @@ cd file_upload
 npm install
 npm run start
 ```
-Once the server is started, please open yur browser and search `http://127.0.0.1:3000/`, and you should expect following page: <br/>
-![Imgur](https://i.imgur.com/qSGbsqd.png)<br/>
+Once the server is started, please open your browser and search `http://127.0.0.1:3000/`, and you should get what you want
 
-![Imgur](https://i.imgur.com/hmNAaEe.png) 
-
-## What else you can do base on this demo?
+## What else can you do base on this demo?
 1. upload files, like images, configuration, theme .etc
 2. make it as a static server (A image server sounds great)
 
@@ -30,4 +27,4 @@ Any issue with this repo, please feel free to contact me, either of below ways w
 2. Just pull your question in this page.
 
 ## Lecence
-MIT-[Scott Xiong](https://blog.scott.world/)
+MIT-[Scott Xiong]()
