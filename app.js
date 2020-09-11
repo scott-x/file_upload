@@ -14,15 +14,20 @@ const storage = multer.diskStorage({
 //init upload
 const upload = multer({
   storage:storage,
-  limits:{fileSize:1000000},
+  limits:{fileSize:10000000000},
   fileFilter:function(req,file,cb){
-    checkFileType(file,cb);
+    AllowAllformat(file,cb);
   }
 
 }).single('myImage');
 
+//allow all
+function AllowAllformat(file,cb){
+  return cb(null,true);
+}
+
 //check file type
-function checkFileType(file,cb){
+function checkFileTypeForImage(file,cb){
   //allowed ext
   const filetype=/jpeg|jpg|png|gif/;
   //check ext
@@ -30,11 +35,12 @@ function checkFileType(file,cb){
   //check mimetype
   const mimetype=filetype.test(file.mimetype);
   if (extname && mimetype ) {
-  	return cb(null,true);
+    return cb(null,true);
   }else{
-  	cb('Error: Images Only!')
-  }	
+    cb('Error: Images Only!')
+  }  
 }
+
 //init app
 const app=express();
 
